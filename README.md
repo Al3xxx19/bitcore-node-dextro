@@ -1,17 +1,17 @@
-Bitcore Node Dash
+Bitcore Node Dinero
 ============
 
-A Dash full node for building applications and services with Node.js. A node is extensible and can be configured to run additional services. At the minimum a node has an interface to [Dash Core v0.12.1.x](https://github.com/dashpay/dash/tree/v0.12.1.x) for more advanced address queries. Additional services can be enabled to make a node more useful such as exposing new APIs, running a block explorer and wallet service.
+A Dinero full node for building applications and services with Node.js. A node is extensible and can be configured to run additional services. At the minimum a node has an interface to [Dinero Core v0.12.1.x](https://github.com/dinerocoin/dinero/tree/v0.12.1.x) for more advanced address queries. Additional services can be enabled to make a node more useful such as exposing new APIs, running a block explorer and wallet service.
 
 ## Install
 
 ```bash
-npm install -g bitcore-node-dash
+npm install -g bitcore-node-dinero
 ```
 
 ## Prerequisites
 
-- Dash Core (v0.12.1.x) with support for additional indexing *(see above)*
+- Dinero Core (v0.12.1.x) with support for additional indexing *(see above)*
 - Node.js v0.10, v0.12, v4 or v5
 - ZeroMQ *(libzmq3-dev for Ubuntu/Debian or zeromq on OSX)*
 - ~20GB of disk storage
@@ -22,16 +22,16 @@ npm install -g bitcore-node-dash
 Bitcore includes a Command Line Interface (CLI) for managing, configuring and interfacing with your Bitcore Node.
 
 ```bash
-bitcore-node-dash create -d <dash-data-dir> mynode
+bitcore-node-dinero create -d <dinero-data-dir> mynode
 cd mynode
-bitcore-node-dash install <service>
-bitcore-node-dash install https://github.com/yourname/helloworld
-bitcore-node-dash start
+bitcore-node-dinero install <service>
+bitcore-node-dinero install https://github.com/yourname/helloworld
+bitcore-node-dinero start
 ```
 
 This will create a directory with configuration files for your node and install the necessary dependencies.
 
-Please note that [Dash Core v0.12.1.x](https://github.com/dashpay/dash/tree/v0.12.1.x) will be downloaded automatically. Once completed the dashd binary should be placed into the &lt;dash-data-dir&gt; folder specified during node creation.
+Please note that [Dinero Core v0.12.1.x](https://github.com/dinerocoin/dinero/tree/v0.12.1.x) will be downloaded automatically. Once completed the dinerod binary should be placed into the &lt;dinero-data-dir&gt; folder specified during node creation.
 
 For more information about (and developing) services, please see the [Service Documentation](docs/services.md).
 
@@ -39,9 +39,9 @@ For more information about (and developing) services, please see the [Service Do
 
 There are several add-on services available to extend the functionality of Bitcore:
 
-- [Insight API](https://github.com/dashpay/insight-api-dash/tree/master)
-- [Insight UI](https://github.com/dashpay/insight-ui-dash/tree/master)
-- [Bitcore Wallet Service](https://github.com/dashpay/bitcore-wallet-service/tree/master)
+- [Insight API](https://github.com/dinerocoin/insight-api-dinero/tree/master)
+- [Insight UI](https://github.com/dinerocoin/insight-ui-dinero/tree/master)
+- [Bitcore Wallet Service](https://github.com/dinerocoin/bitcore-wallet-service/tree/master)
 
 ## Documentation
 
@@ -60,7 +60,7 @@ Please send pull requests for bug fixes, code optimization, and ideas for improv
 
 ## License
 
-Code released under [the MIT license](https://github.com/bitpay/bitcore-node-dash/blob/master/LICENSE).
+Code released under [the MIT license](https://github.com/bitpay/bitcore-node-dinero/blob/master/LICENSE).
 
 Copyright 2013-2015 BitPay, Inc.
 
