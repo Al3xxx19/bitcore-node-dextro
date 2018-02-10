@@ -30,8 +30,6 @@
     "bitcore-node-dinero": "./bin/bitcore-node-dinero"
   },
   "scripts": {
-    "preinstall": "./scripts/download",
-    "verify": "./scripts/download --skip-bitcoin-download --verify-bitcoin-download",
     "test": "mocha -R spec --recursive",
     "regtest": "./scripts/regtest",
     "jshint": "jshint --reporter=node_modules/jshint-stylish ./lib",
@@ -46,8 +44,8 @@
   ],
   "dependencies": {
     "async": "^1.3.0",
-    "bitcoind-rpc-dinero": "^1.0.1",
-    "bitcore-lib-dinero": "^0.15.2",
+    "bitcoind-rpc-dinero": "dinerocoin/bitcoind-rpc-dinero",
+    "bitcore-lib-dinero": "dinerocoin/bitcore-lib-dinero",
     "body-parser": "^1.13.3",
     "colors": "^1.1.2",
     "commander": "^2.8.1",
@@ -69,7 +67,7 @@
   },
   "devDependencies": {
     "benchmark": "1.0.0",
-    "bitcore-p2p-dinero": "^1.1.5",
+    "bitcore-p2p-dinero": "dinerocoin/bitcore-lib-dinero",
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
     "istanbul": "^0.4.3",
