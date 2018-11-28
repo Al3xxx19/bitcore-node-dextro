@@ -23,7 +23,7 @@ describe('#findConfig', function() {
         throw err;
       }
       fs.writeFile(
-        testDir + '/p2/bitcore-node-dinero.json',
+        testDir + '/p2/bitcore-node-dextro.json',
         JSON.stringify(expectedConfig),
         function() {
           mkdirp(testDir + '/e0', function(err) {
