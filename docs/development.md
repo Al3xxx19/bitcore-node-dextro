@@ -10,11 +10,11 @@ nvm install v4
 
 ## Fork and Download Repositories
 
-To develop bitcore-node-dinero:
+To develop bitcore-node-dextro:
 
 ```bash
 cd ~
-git clone git@github.com:<yourusername>/bitcore-node-dinero.git
+git clone git@github.com:<yourusername>/bitcore-node-dextro.git
 git clone git@github.com:<yourusername>/bitcore-lib.git
 ```
 
@@ -48,19 +48,19 @@ brew install zeromq
 ```bash
 cd bitcore-lib
 npm install
-cd ../bitcore-node-dinero
+cd ../bitcore-node-dextro
 npm install
 ```
 **Note**: If you get a message about not being able to download bitcoin distribution, you'll need to compile bitcoind from source, and setup your configuration to use that version.
 
 
-We now will setup symlinks in `bitcore-node-dinero` *(repeat this for any other modules you're planning on developing)*:
+We now will setup symlinks in `bitcore-node-dextro` *(repeat this for any other modules you're planning on developing)*:
 ```bash
 cd node_modules
 rm -rf bitcore-lib
 ln -s ~/bitcore-lib
-rm -rf bitcoind-rpc-dinero
-ln -s ~/bitcoind-rpc-dinero
+rm -rf bitcoind-rpc-dextro
+ln -s ~/bitcoind-rpc-dextro
 ```
 
 And if you're compiling or developing bitcoin:
@@ -78,7 +78,7 @@ npm install mocha -g
 
 To run all test suites:
 ```bash
-cd bitcore-node-dinero
+cd bitcore-node-dextro
 npm run regtest
 npm run test
 ```
@@ -102,11 +102,11 @@ cd ~
 mkdir devnode
 cd devnode
 mkdir node_modules
-touch bitcore-node-dinero.json
+touch bitcore-node-dextro.json
 touch package.json
 ```
 
-Edit `bitcore-node-dinero.json` with something similar to:
+Edit `bitcore-node-dextro.json` with something similar to:
 ```json
 {
   "network": "livenet",
@@ -136,7 +136,7 @@ Setup symlinks for all of the services and dependencies:
 ```bash
 cd node_modules
 ln -s ~/bitcore-lib
-ln -s ~/bitcore-node-dinero
+ln -s ~/bitcore-node-dextro
 ln -s ~/insight-api
 ln -s ~/insight-ui
 ```
